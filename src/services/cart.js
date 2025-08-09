@@ -43,7 +43,7 @@ async function removeItem(userCart, item) {
 }
 
 //✅adiciona um item do carrinho = aumenta a quantidade de um item já existente no carrinho
-async function plusItem(userCart, item) {
+async function sumItem(userCart, item) {
 
     //1. Encontra o indice do ítem
     const indexFound = userCart.findIndex((product) => product.name === item.name);  
@@ -99,6 +99,6 @@ export {
     removeItem,
     calculateTotal,
     displayCart,
-    plusItem
+    sumItem
 }
 
